@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Symbiosis Admission Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="logo.png" class="logo">
+
+<h1>Symbiosis Admission Registration Form</h1>
+
+<form onsubmit="return validateForm()">
+
+<label>Student Name</label>
+<input type="text" id="name" placeholder="Enter your name">
+
+<label>Email ID</label>
+<input type="email" id="email" placeholder="Enter your email">
+
+<label>Mobile Number</label>
+<input type="tel" id="mobile" placeholder="Enter your mobile number">
+
+<label>Department</label>
+<select id="department">
+<option value="">Select Department</option>
+<option>Computer Science</option>
+<option>Mechanical</option>
+<option>Civil</option>
+<option>Electrical</option>
+</select>
+
+<label>Password</label>
+<input type="password" id="password">
+
+<label>Confirm Password</label>
+<input type="password" id="confirm">
+
+<div class="gender-row">
+
+<div class="gender-options">
+<label class="gender-label">Gender</label>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+</div>
+
+</div>
+<br></br>
+
+<select id="course">
+<option value="">Select Course</option>
+<option>B.Tech</option>
+<option>BBA</option>
+<option>MBA</option>
+<option>M.Tech</option>
+</select>
+
+<label>Feedback Comments</label>
+<textarea id="feedback" placeholder="Enter your feedback"></textarea>
+
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+
+</form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
